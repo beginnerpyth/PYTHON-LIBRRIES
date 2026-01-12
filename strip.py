@@ -1,0 +1,12 @@
+value =("hello world")
+output_value = ("####hello world####")
+value = value[:5].title()+ value[6:].title()
+print(value)
+total_length = len(output_value)
+print("total_length",total_length)
+left_strip = output_value.lstrip("#")
+left_side = total_length - len(left_strip)
+right_strip = output_value.rstrip("#")
+right_side = total_length - len(right_strip)
+output = "#"*left_side + value + "#"*right_side
+print("final_output",output)
